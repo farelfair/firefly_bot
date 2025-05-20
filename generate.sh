@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Nama file
-FILE="index.html"
+FILE=""
 
 # Cek file
 if [ ! -f "$FILE" ]; then
@@ -30,7 +30,7 @@ cat <<EOF > telegram_payload.json
     "inline_keyboard": [
       [
         {
-          "text": "⬇️ Download",
+          "text": "Download",
           "url": "$DOWNLOAD_URL"
         }
       ]

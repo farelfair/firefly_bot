@@ -4,7 +4,7 @@ import json
 
 async def main():
     bot = Bot("")
-    chat_id = "@"
+    chat_id = ""
 
     with open("telegram_payload.json") as f:
         data = json.load(f)
