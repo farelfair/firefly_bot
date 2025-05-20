@@ -3,8 +3,8 @@ from telegram import Bot, InlineKeyboardMarkup, InlineKeyboardButton
 import json
 
 async def main():
-    bot = Bot("8014769827:AAEbUzfppHyKd4sY3LuxOvDUrkhwOBwF2DU")
-    chat_id = "@ren_serveryeah"
+    bot = Bot("")
+    chat_id = "@"
 
     with open("telegram_payload.json") as f:
         data = json.load(f)
