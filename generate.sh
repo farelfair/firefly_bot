@@ -5,7 +5,7 @@ FILE=""
 
 # ===== check file =====
 if [ ! -f "$FILE" ]; then
-  echo "[✗] File '$FILE' tidak ditemukan!"
+  echo "[✗] File '$FILE' not found!"
   exit 1
 fi
 
