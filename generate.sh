@@ -16,8 +16,8 @@ export TZ="Asia/Jakarta"
 # ===== metadata =====
 FILE_SIZE=$(du -h "$FILE" | cut -f1)
 UPLOAD_DATE=$(date "+%Y-%m-%d %H:%M:%S %Z")  # Contoh: 2025-05-20 23:40:00 WIB
-MAINTAINER="@renvelations"
-DEVICE="poco M3 & Redmi 9T / Redmi 9 Power"
+MAINTAINER="@" # user tag like @farel
+DEVICE="" # device name
 MD5_SUM=$(md5sum "$FILE" | cut -d ' ' -f1)
 SHA1_SUM=$(sha1sum "$FILE" | cut -d ' ' -f1)
 
