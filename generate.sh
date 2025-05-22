@@ -25,7 +25,7 @@ SHA1_SUM=$(sha1sum "$FILE" | cut -d ' ' -f1)
 read -p "enter the file download link: " DOWNLOAD_URL
 
 # ===== created file JSON payload Telegram =====
-cat <<EOF > telegram_payload.json
+cat <<EOF > message.json
 {
   "text": "*File Information:*\n*File Name:* \`$FILE_NAME\`\n*File Size:* *$FILE_SIZE*\n*Upload Date:* \`$UPLOAD_DATE\`\n*Maintainer:* $MAINTAINER\n*Device:* *$DEVICE*\n*MD5 Sum:* \`$MD5_SUM\`\n*SHA1 Sum:* \`$SHA1_SUM\`",
   "parse_mode": "Markdown",
